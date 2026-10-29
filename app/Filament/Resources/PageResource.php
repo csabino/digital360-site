@@ -36,6 +36,13 @@ class PageResource extends Resource
                 Forms\Components\TextInput::make('title')
                     ->required(),
                 Forms\Components\TextInput::make('subtitle'),
+                Forms\Components\FileUpload::make('image')
+                    ->label('Imagem de destaque')
+                    ->image()
+                    ->directory('pages')
+                    ->imageEditor()
+                    ->helperText('Aparece ao lado do texto nesta página. Se não enviar nada, uma ilustração padrão é usada.')
+                    ->columnSpanFull(),
                 Forms\Components\RichEditor::make('content')
                     ->columnSpanFull(),
                 Forms\Components\TextInput::make('seo_description')

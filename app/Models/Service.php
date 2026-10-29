@@ -12,6 +12,7 @@ class Service extends Model
         'icon',
         'excerpt',
         'description',
+        'image',
         'order',
         'is_active',
     ];

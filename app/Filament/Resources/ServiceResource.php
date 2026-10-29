@@ -39,6 +39,13 @@ class ServiceResource extends Resource
                 Forms\Components\RichEditor::make('description')
                     ->label('Descrição completa')
                     ->columnSpanFull(),
+                Forms\Components\FileUpload::make('image')
+                    ->label('Imagem do serviço')
+                    ->image()
+                    ->directory('services')
+                    ->imageEditor()
+                    ->helperText('Opcional. Aparece no card e na página do serviço.')
+                    ->columnSpanFull(),
                 Forms\Components\TextInput::make('order')
                     ->required()
                     ->numeric()
