@@ -39,7 +39,7 @@
                 <div class="flex gap-6 text-sm">
                     <a href="{{ route('about') }}" class="hover:text-orange-400">Sobre</a>
                     <a href="{{ route('services.index') }}" class="hover:text-orange-400">Serviços</a>
-                    <a href="{{ route('contact') }}" class="hover:text-orange-400">Contato</a>
+                    <a href="{{ whatsapp_url() }}" target="_blank" rel="noopener" class="hover:text-orange-400">Contato</a>
                 </div>
             </div>
             <p class="mt-8 border-t border-zinc-800 pt-6 text-xs text-zinc-500 text-center md:text-left">
