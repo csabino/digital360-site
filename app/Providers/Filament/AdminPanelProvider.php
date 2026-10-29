@@ -25,7 +25,7 @@ class AdminPanelProvider extends PanelProvider
         return $panel
             ->default()
             ->id('admin')
-            ->path('admin')
+            ->path('painel-d360')
             ->login()
             ->brandName('digital360')
             ->brandLogo(fn () => view('filament.brand-logo'))
