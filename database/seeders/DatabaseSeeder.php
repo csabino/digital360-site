@@ -2,7 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
+use App\Models\Page;
+use App\Models\Service;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -15,11 +16,49 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        Page::updateOrCreate(['slug' => 'home'], [
+            'title' => 'Transformamos desafios de negócio em resultados concretos',
+            'subtitle' => 'Consultoria Digital360',
+            'content' => '<p>Ajudamos empresas a crescer com estratégia, tecnologia e dados. Nossa equipe multidisciplinar atua de ponta a ponta, do diagnóstico à execução.</p>',
+            'seo_description' => 'Digital360 — consultoria especializada em estratégia, tecnologia e transformação digital para empresas.',
         ]);
+
+        Page::updateOrCreate(['slug' => 'sobre'], [
+            'title' => 'Quem somos',
+            'subtitle' => 'Nossa história, missão e valores',
+            'content' => '<p>A Digital360 nasceu para ajudar empresas a navegar a transformação digital com clareza e resultado. Combinamos experiência de mercado com metodologias ágeis para entregar valor rápido e sustentável.</p>',
+            'seo_description' => 'Conheça a história, missão e valores da Digital360.',
+        ]);
+
+        $services = [
+            [
+                'title' => 'Estratégia e Planejamento',
+                'icon' => 'heroicon-o-chart-bar',
+                'excerpt' => 'Diagnóstico e plano de ação para acelerar o crescimento do seu negócio.',
+                'description' => '<p>Analisamos o cenário atual da sua empresa e construímos um plano estratégico claro, com metas e indicadores de sucesso.</p>',
+                'order' => 1,
+            ],
+            [
+                'title' => 'Transformação Digital',
+                'icon' => 'heroicon-o-cpu-chip',
+                'excerpt' => 'Modernização de processos e adoção de tecnologia com foco em resultado.',
+                'description' => '<p>Implementamos processos e ferramentas digitais que aumentam eficiência e reduzem custos operacionais.</p>',
+                'order' => 2,
+            ],
+            [
+                'title' => 'Dados e Performance',
+                'icon' => 'heroicon-o-presentation-chart-line',
+                'excerpt' => 'Decisões baseadas em dados, com dashboards e indicadores sob medida.',
+                'description' => '<p>Estruturamos a coleta e análise de dados da sua empresa para apoiar decisões mais rápidas e assertivas.</p>',
+                'order' => 3,
+            ],
+        ];
+
+        foreach ($services as $service) {
+            Service::updateOrCreate(
+                ['slug' => \Illuminate\Support\Str::slug($service['title'])],
+                $service + ['slug' => \Illuminate\Support\Str::slug($service['title']), 'is_active' => true]
+            );
+        }
     }
 }
