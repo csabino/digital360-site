@@ -28,6 +28,9 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login()
             ->brandName('digital360')
+            ->brandLogo(fn () => view('filament.brand-logo'))
+            ->brandLogoHeight('2.75rem')
+            ->favicon(asset('favicon.svg'))
             ->colors([
                 'primary' => Color::Orange,
             ])

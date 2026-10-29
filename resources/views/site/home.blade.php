@@ -18,7 +18,7 @@
                 {!! $page->content !!}
             </div>
             <div class="mt-10 flex flex-wrap justify-center gap-4">
-                <a href="{{ route('contact') }}" class="rounded-full bg-orange-500 px-6 py-3 text-white font-semibold hover:bg-orange-600 transition">Fale com a gente</a>
+                <a href="{{ whatsapp_url() }}" target="_blank" rel="noopener" class="rounded-full bg-orange-500 px-6 py-3 text-white font-semibold hover:bg-orange-600 transition">Fale com a gente</a>
                 <a href="{{ route('services.index') }}" class="rounded-full border border-zinc-700 px-6 py-3 font-medium text-white hover:border-orange-400 transition">Conheça nossos serviços</a>
             </div>
         </div>

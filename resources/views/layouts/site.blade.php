@@ -20,7 +20,7 @@
                 <a href="{{ route('home') }}" class="hover:text-orange-500 {{ request()->routeIs('home') ? 'text-orange-500' : '' }}">Home</a>
                 <a href="{{ route('about') }}" class="hover:text-orange-500 {{ request()->routeIs('about') ? 'text-orange-500' : '' }}">Sobre</a>
                 <a href="{{ route('services.index') }}" class="hover:text-orange-500 {{ request()->routeIs('services.*') ? 'text-orange-500' : '' }}">Serviços</a>
-                <a href="{{ route('contact') }}" class="rounded-full bg-orange-500 px-4 py-2 text-white font-semibold hover:bg-orange-600 transition">Fale com a gente</a>
+                <a href="{{ whatsapp_url() }}" target="_blank" rel="noopener" class="rounded-full bg-orange-500 px-4 py-2 text-white font-semibold hover:bg-orange-600 transition">Fale com a gente</a>
             </nav>
         </div>
     </header>

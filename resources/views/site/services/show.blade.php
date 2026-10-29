@@ -18,7 +18,7 @@
             {!! $service->description !!}
         </div>
         <div class="mt-10">
-            <a href="{{ route('contact') }}" class="rounded-full bg-orange-500 px-6 py-3 text-white font-semibold hover:bg-orange-600 transition">Quero falar com um especialista</a>
+            <a href="{{ whatsapp_url('Olá! Vim pelo site da digital360, tenho interesse em ' . $service->title . '.') }}" target="_blank" rel="noopener" class="rounded-full bg-orange-500 px-6 py-3 text-white font-semibold hover:bg-orange-600 transition">Quero falar com um especialista</a>
         </div>
     </section>
 @endsection
