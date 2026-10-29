@@ -24,11 +24,15 @@ RUN apk add --no-cache \
         nginx \
         supervisor \
         bash \
+        libpng \
+        libzip \
+        oniguruma \
+        icu-libs \
+    && apk add --no-cache --virtual .build-deps \
         libpng-dev \
         libzip-dev \
         oniguruma-dev \
         icu-dev \
-        icu-libs \
     && docker-php-ext-install \
         pdo_mysql \
         mbstring \
@@ -38,7 +42,7 @@ RUN apk add --no-cache \
         intl \
         exif \
         pcntl \
-    && apk del libpng-dev libzip-dev oniguruma-dev icu-dev
+    && apk del .build-deps
 
 WORKDIR /var/www/html
 
