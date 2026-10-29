@@ -16,18 +16,18 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        Page::updateOrCreate(['slug' => 'home'], [
+        Page::firstOrCreate(['slug' => 'home'], [
             'title' => 'Transformamos desafios de negócio em resultados concretos',
-            'subtitle' => 'Consultoria Digital360',
+            'subtitle' => 'Consultoria digital360',
             'content' => '<p>Ajudamos empresas a crescer com estratégia, tecnologia e dados. Nossa equipe multidisciplinar atua de ponta a ponta, do diagnóstico à execução.</p>',
-            'seo_description' => 'Digital360 — consultoria especializada em estratégia, tecnologia e transformação digital para empresas.',
+            'seo_description' => 'digital360 — consultoria especializada em estratégia, tecnologia e transformação digital para empresas.',
         ]);
 
-        Page::updateOrCreate(['slug' => 'sobre'], [
+        Page::firstOrCreate(['slug' => 'sobre'], [
             'title' => 'Quem somos',
             'subtitle' => 'Nossa história, missão e valores',
-            'content' => '<p>A Digital360 nasceu para ajudar empresas a navegar a transformação digital com clareza e resultado. Combinamos experiência de mercado com metodologias ágeis para entregar valor rápido e sustentável.</p>',
-            'seo_description' => 'Conheça a história, missão e valores da Digital360.',
+            'content' => '<p>A digital360 nasceu para ajudar empresas a navegar a transformação digital com clareza e resultado. Combinamos experiência de mercado com metodologias ágeis para entregar valor rápido e sustentável.</p>',
+            'seo_description' => 'Conheça a história, missão e valores da digital360.',
         ]);
 
         $services = [
@@ -55,9 +55,9 @@ class DatabaseSeeder extends Seeder
         ];
 
         foreach ($services as $service) {
-            Service::updateOrCreate(
+            Service::firstOrCreate(
                 ['slug' => \Illuminate\Support\Str::slug($service['title'])],
-                $service + ['slug' => \Illuminate\Support\Str::slug($service['title']), 'is_active' => true]
+                $service + ['is_active' => true]
             );
         }
     }
