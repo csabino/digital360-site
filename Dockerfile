@@ -42,6 +42,7 @@ RUN apk add --no-cache \
 
 WORKDIR /var/www/html
 
+COPY --from=vendor /usr/bin/composer /usr/bin/composer
 COPY --from=vendor /app/vendor ./vendor
 COPY . .
 COPY --from=frontend /app/public/build ./public/build
