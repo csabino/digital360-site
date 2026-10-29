@@ -13,8 +13,8 @@
     <header class="border-b border-zinc-100">
         <div class="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
             <a href="{{ route('home') }}" class="flex items-center gap-2.5 text-xl font-bold tracking-tight text-zinc-900">
-                <x-brand-mark class="h-7 w-7 text-orange-500" />
-                digital<span class="text-orange-500">360</span>
+                <x-brand-mark class="h-7 w-7 shrink-0" />
+                <span>digital<span class="text-orange-500">360</span></span>
             </a>
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-600">
                 <a href="{{ route('home') }}" class="hover:text-orange-500 {{ request()->routeIs('home') ? 'text-orange-500' : '' }}">Home</a>
@@ -33,8 +33,8 @@
         <div class="mx-auto max-w-6xl px-6 py-12">
             <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                 <a href="{{ route('home') }}" class="flex items-center gap-2.5 text-lg font-bold tracking-tight text-white">
-                    <x-brand-mark class="h-6 w-6 text-orange-500" />
-                    digital<span class="text-orange-500">360</span>
+                    <x-brand-mark class="h-6 w-6 shrink-0" />
+                    <span>digital<span class="text-orange-500">360</span></span>
                 </a>
                 <div class="flex gap-6 text-sm">
                     <a href="{{ route('about') }}" class="hover:text-orange-400">Sobre</a>
