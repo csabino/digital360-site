@@ -8,3 +8,13 @@ if (! function_exists('whatsapp_url')) {
         return 'https://wa.me/' . config('services.whatsapp.number') . '?text=' . urlencode($message);
     }
 }
+
+if (! function_exists('card_frame_color')) {
+    function card_frame_color(): string
+    {
+        return \Illuminate\Support\Facades\Cache::rememberForever(
+            'site_setting_card_frame_color',
+            fn () => \App\Models\SiteSetting::current()->card_frame_color
+        );
+    }
+}
