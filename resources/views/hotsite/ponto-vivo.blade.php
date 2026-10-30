@@ -33,83 +33,117 @@
         <div class="pointer-events-none absolute -top-24 -left-24 h-96 w-96 rounded-full bg-indigo-500/20 blur-3xl"></div>
         <div class="pointer-events-none absolute -bottom-32 -right-24 h-96 w-96 rounded-full bg-emerald-500/10 blur-3xl"></div>
 
-        <div class="relative mx-auto max-w-6xl px-6 py-16 md:py-24 grid items-center gap-12 lg:grid-cols-2">
-            <div class="text-center lg:text-left">
-                <p class="inline-flex items-center gap-2 text-xs md:text-sm font-semibold uppercase tracking-wide text-emerald-400">
-                    <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
-                    Escritório virtual 100% na nuvem
-                </p>
-                <h1 class="mt-5 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-tight">
-                    Sua equipe sempre visível. Suas reuniões sempre organizadas. Tudo auditado.
-                </h1>
-                <p class="mt-6 text-base md:text-lg text-slate-300 max-w-xl mx-auto lg:mx-0">
-                    O PontoVivo mostra quem da sua equipe está online em tempo real, organiza reuniões com histórico completo e registra cada ação com auditoria total — hospedado pela digital360 em infraestrutura global, pronto pra usar sem instalação.
-                </p>
-                <div class="mt-10 flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4">
-                    <a href="{{ whatsapp_url('Olá! Quero saber mais sobre o PontoVivo.') }}" target="_blank" rel="noopener" class="rounded-full bg-emerald-500 px-6 py-3 text-white font-semibold hover:bg-emerald-600 transition">
-                        Falar no WhatsApp
-                    </a>
-                    <a href="#como-funciona" class="rounded-full border border-slate-600 px-6 py-3 font-medium text-white hover:border-indigo-400 transition">
-                        Ver como funciona
-                    </a>
-                </div>
+        <div class="relative mx-auto max-w-4xl px-6 pt-16 md:pt-24 text-center">
+            <p class="inline-flex items-center gap-2 text-xs md:text-sm font-semibold uppercase tracking-wide text-emerald-400">
+                <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                Escritório virtual 100% na nuvem
+            </p>
+            <h1 class="mt-5 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-tight">
+                Sua equipe sempre visível. Suas reuniões sempre organizadas. Tudo auditado.
+            </h1>
+            <p class="mt-6 text-base md:text-lg text-slate-300 max-w-2xl mx-auto">
+                O PontoVivo mostra quem da sua equipe está online em tempo real, organiza reuniões com histórico completo e registra cada ação com auditoria total — hospedado pela digital360 em infraestrutura global, pronto pra usar sem instalação.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row flex-wrap justify-center gap-4">
+                <a href="{{ whatsapp_url('Olá! Quero saber mais sobre o PontoVivo.') }}" target="_blank" rel="noopener" class="rounded-full bg-emerald-500 px-6 py-3 text-white font-semibold hover:bg-emerald-600 transition">
+                    Falar no WhatsApp
+                </a>
+                <a href="#como-funciona" class="rounded-full border border-slate-600 px-6 py-3 font-medium text-white hover:border-indigo-400 transition">
+                    Ver como funciona
+                </a>
             </div>
+        </div>
 
-            {{-- CSS mockup of the virtual office panel --}}
-            <div class="mx-auto w-full max-w-sm rounded-2xl bg-white text-slate-800 shadow-2xl p-5">
-                <div class="flex items-center justify-between mb-4">
-                    <span class="text-sm font-semibold text-slate-700">Equipe online</span>
-                    <span class="flex items-center gap-1.5 text-xs font-medium text-emerald-600">
-                        <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
-                        12 ativos agora
+        {{-- CSS mockup of the PontoVivo dashboard --}}
+        <div class="relative mx-auto max-w-5xl px-6 pb-16 md:pb-24 pt-12">
+            <div class="rounded-2xl bg-slate-950 shadow-2xl ring-1 ring-white/10 overflow-hidden text-left">
+                <div class="flex items-center justify-between px-5 py-4 border-b border-white/10">
+                    <span class="flex items-center gap-2 text-sm font-bold text-white">
+                        <span class="h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+                        Ponto<span class="text-indigo-400">Vivo</span>
+                    </span>
+                    <span class="flex items-center gap-2 text-xs text-slate-400">
+                        Olá, Sabino
+                        <span class="h-6 w-6 rounded-full bg-indigo-500/40 flex items-center justify-center text-[10px] font-semibold text-indigo-100">S</span>
                     </span>
                 </div>
 
-                <div class="space-y-3">
-                    <div class="flex items-center gap-3">
-                        <div class="relative h-9 w-9 shrink-0 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 text-sm font-semibold">
-                            AM
-                            <span class="absolute -bottom-0.5 -right-0.5 h-3 w-3 rounded-full bg-emerald-500 ring-2 ring-white"></span>
-                        </div>
-                        <div>
-                            <p class="text-sm font-medium text-slate-800">Ana Martins</p>
-                            <p class="text-xs text-slate-500">Online agora</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <div class="relative h-9 w-9 shrink-0 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 text-sm font-semibold">
-                            RC
-                            <span class="absolute -bottom-0.5 -right-0.5 h-3 w-3 rounded-full bg-blue-500 ring-2 ring-white"></span>
-                        </div>
-                        <div>
-                            <p class="text-sm font-medium text-slate-800">Rafael Costa</p>
-                            <p class="text-xs text-slate-500">Em reunião</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <div class="relative h-9 w-9 shrink-0 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-700 text-sm font-semibold">
-                            JL
-                            <span class="absolute -bottom-0.5 -right-0.5 h-3 w-3 rounded-full bg-amber-400 ring-2 ring-white"></span>
-                        </div>
-                        <div>
-                            <p class="text-sm font-medium text-slate-800">Juliana Lima</p>
-                            <p class="text-xs text-slate-500">Ausente</p>
-                        </div>
-                    </div>
+                <div class="flex flex-wrap gap-2 px-5 py-4 border-b border-white/10">
+                    <span class="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300">Ativos 4</span>
+                    <span class="rounded-full border border-indigo-500/30 bg-indigo-500/10 px-3 py-1 text-xs font-medium text-indigo-300">Em reunião 1</span>
+                    <span class="rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-1 text-xs font-medium text-amber-300">Sem sala 0</span>
+                    <span class="rounded-full border border-slate-500/30 bg-slate-500/10 px-3 py-1 text-xs font-medium text-slate-300">Offline 3</span>
+                    <span class="rounded-full border border-sky-500/30 bg-sky-500/10 px-3 py-1 text-xs font-medium text-sky-300">Salas ocupadas 1</span>
                 </div>
 
-                <div class="mt-4 pt-4 border-t border-slate-100">
-                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Próxima reunião</p>
-                    <div class="rounded-lg bg-indigo-50 p-3 flex items-center justify-between">
-                        <span class="text-sm text-indigo-700 font-medium">Alinhamento semanal</span>
-                        <span class="text-xs text-indigo-500">14:00</span>
+                <div class="grid gap-3 p-5 sm:grid-cols-2 lg:grid-cols-4">
+                    <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+                        <span class="flex items-center gap-2 text-sm font-semibold text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+                            Não disponível
+                        </span>
+                        <p class="mt-1 text-xs text-slate-400">Offline / Descanso / Almoço</p>
+                        <div class="mt-3 rounded-lg bg-white/5 px-3 py-2 text-xs text-slate-400">Sala vazia</div>
                     </div>
-                </div>
-
-                <div class="mt-4 pt-4 border-t border-slate-100">
-                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">Log de auditoria</p>
-                    <p class="text-xs text-slate-500">Ana Martins acessou o painel às 09:12</p>
-                    <p class="text-xs text-slate-500">Rafael Costa entrou na reunião às 09:45</p>
+                    <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+                        <span class="flex items-center gap-2 text-sm font-semibold text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/></svg>
+                            Diretoria
+                        </span>
+                        <p class="mt-1 text-xs text-slate-400">Diretoria Executiva</p>
+                        <div class="mt-3 rounded-lg bg-white/5 px-3 py-2 text-xs text-slate-400">Sala vazia</div>
+                    </div>
+                    <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+                        <span class="flex items-center gap-2 text-sm font-semibold text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-sky-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+                            Comercial
+                        </span>
+                        <p class="mt-1 text-xs text-slate-400">Diretoria Comercial</p>
+                        <div class="mt-3 rounded-lg bg-white/5 px-3 py-2 text-xs text-slate-400">Sala vazia</div>
+                    </div>
+                    <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+                        <span class="flex items-center gap-2 text-sm font-semibold text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                            Financeiro
+                        </span>
+                        <p class="mt-1 text-xs text-slate-400">Financeiro / Comercial</p>
+                        <div class="mt-3 rounded-lg bg-white/5 px-3 py-2 text-xs text-slate-400">Sala vazia</div>
+                    </div>
+                    <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+                        <span class="flex items-center gap-2 text-sm font-semibold text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+                            Operações
+                        </span>
+                        <p class="mt-1 text-xs text-slate-400">Gerência de Operações</p>
+                        <div class="mt-3 rounded-lg bg-white/5 px-3 py-2 text-xs text-slate-400">Sala vazia</div>
+                    </div>
+                    <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+                        <span class="flex items-center gap-2 text-sm font-semibold text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+                            Tecnologia
+                        </span>
+                        <p class="mt-1 text-xs text-slate-400">Gerência de Tecnologia</p>
+                        <div class="mt-3 rounded-lg bg-white/5 px-3 py-2 text-xs text-slate-400">Sala vazia</div>
+                    </div>
+                    <div class="rounded-xl border border-indigo-400/30 bg-indigo-500/10 p-4">
+                        <span class="flex items-center gap-2 text-sm font-semibold text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+                            Produtos
+                        </span>
+                        <p class="mt-1 text-xs text-slate-400">Gerência de Produtos</p>
+                        <div class="mt-3 flex items-center gap-2 rounded-lg bg-white/10 px-3 py-2">
+                            <span class="h-6 w-6 shrink-0 rounded-full bg-indigo-500 flex items-center justify-center text-[10px] font-semibold text-white">S</span>
+                            <span class="text-xs text-white">Sabino</span>
+                        </div>
+                    </div>
+                    <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+                        <span class="flex items-center gap-2 text-sm font-semibold text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-sky-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="8" rx="2"/><rect x="2" y="13" width="20" height="8" rx="2"/><path d="M6 7h.01M6 17h.01"/></svg>
+                            TI
+                        </span>
+                        <p class="mt-1 text-xs text-slate-400">Infraestrutura</p>
+                        <div class="mt-3 rounded-lg bg-white/5 px-3 py-2 text-xs text-slate-400">Sala vazia</div>
+                    </div>
                 </div>
             </div>
         </div>
