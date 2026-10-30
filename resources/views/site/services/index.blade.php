@@ -7,9 +7,9 @@
         <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-zinc-900 text-center">Nossos serviços</h1>
         <p class="mt-4 text-center text-zinc-600 max-w-2xl mx-auto">Soluções de consultoria pensadas para cada etapa da jornada da sua empresa.</p>
 
-        <div class="mt-14 grid gap-8 md:grid-cols-3">
+        <div class="mt-14 flex flex-wrap justify-center gap-8">
             @foreach ($services as $service)
-                <a href="{{ route('services.show', $service->slug) }}" class="group block overflow-hidden rounded-2xl border border-zinc-100 hover:border-orange-300 hover:shadow-md transition">
+                <a href="{{ route('services.show', $service->slug) }}" class="group block w-full md:w-[calc((100%-4rem)/3)] overflow-hidden rounded-2xl border border-zinc-100 hover:border-orange-300 hover:shadow-md transition">
                     @if ($service->image)
                         <img src="{{ Storage::url($service->image) }}" alt="{{ $service->title }}" class="h-40 w-full object-cover">
                     @else

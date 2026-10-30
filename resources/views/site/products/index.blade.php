@@ -7,9 +7,9 @@
         <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-zinc-900 text-center">Nossos produtos</h1>
         <p class="mt-4 text-center text-zinc-600 max-w-2xl mx-auto">Soluções digitais desenvolvidas pela digital360 para acelerar os resultados do seu negócio.</p>
 
-        <div class="mt-14 grid gap-8 md:grid-cols-3">
+        <div class="mt-14 flex flex-wrap justify-center gap-8">
             @foreach ($products as $product)
-                <a href="{{ route('products.show', $product->slug) }}" class="group block overflow-hidden rounded-2xl border border-zinc-100 hover:border-orange-300 hover:shadow-md transition">
+                <a href="{{ route('products.show', $product->slug) }}" class="group block w-full md:w-[calc((100%-4rem)/3)] overflow-hidden rounded-2xl border border-zinc-100 hover:border-orange-300 hover:shadow-md transition">
                     @if ($product->image)
                         <img src="{{ Storage::url($product->image) }}" alt="{{ $product->title }}" class="h-40 w-full object-cover">
                     @else

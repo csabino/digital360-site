@@ -37,9 +37,9 @@
     @if ($services->isNotEmpty())
         <section class="mx-auto max-w-6xl px-6 py-20">
             <h2 class="text-2xl font-bold text-zinc-900 text-center mb-10">O que fazemos</h2>
-            <div class="grid gap-8 md:grid-cols-3">
+            <div class="flex flex-wrap justify-center gap-8">
                 @foreach ($services as $service)
-                    <a href="{{ route('services.show', $service->slug) }}" class="group block overflow-hidden rounded-2xl border border-zinc-100 hover:border-orange-300 hover:shadow-md transition">
+                    <a href="{{ route('services.show', $service->slug) }}" class="group block w-full md:w-[calc((100%-4rem)/3)] overflow-hidden rounded-2xl border border-zinc-100 hover:border-orange-300 hover:shadow-md transition">
                         @if ($service->image)
                             <img src="{{ Storage::url($service->image) }}" alt="{{ $service->title }}" class="h-40 w-full object-cover">
                         @else
