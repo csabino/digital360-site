@@ -13,13 +13,11 @@
         </linearGradient>
     </defs>
 
-    <circle cx="200" cy="200" r="190" fill="white" fill-opacity="0.03" />
-
     <!-- target rings -->
     <circle cx="290" cy="110" r="70" stroke="url(#stratGradB)" stroke-width="1.5" stroke-opacity="0.25" />
     <circle cx="290" cy="110" r="46" stroke="url(#stratGradA)" stroke-width="2" stroke-opacity="0.5" />
     <circle cx="290" cy="110" r="22" fill="url(#stratGradA)" />
-    <circle cx="290" cy="110" r="8" fill="white" fill-opacity="0.9" />
+    <circle cx="290" cy="110" r="8" fill="#27272a" />
 
     <!-- rising bars -->
     <g>
@@ -30,8 +28,8 @@
     </g>
 
     <!-- trend line with arrow -->
-    <path d="M60 300 L120 260 L170 230 L227 140" stroke="white" stroke-width="3" stroke-linecap="round" stroke-opacity="0.85" />
-    <path d="M205 150 L227 140 L220 164" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.85" />
+    <path d="M60 300 L120 260 L170 230 L227 140" stroke="#27272a" stroke-width="3" stroke-linecap="round" stroke-opacity="0.85" />
+    <path d="M205 150 L227 140 L220 164" stroke="#27272a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.85" />
 
     <circle cx="340" cy="330" r="5" fill="url(#stratGradA)" />
     <circle cx="70" cy="90" r="4" fill="#fdba74" />

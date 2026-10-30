@@ -13,8 +13,6 @@
         </linearGradient>
     </defs>
 
-    <circle cx="200" cy="200" r="190" fill="white" fill-opacity="0.03" />
-
     <!-- grid baseline -->
     <line x1="60" y1="310" x2="340" y2="310" stroke="url(#dataGradB)" stroke-width="2" stroke-opacity="0.4" />
     <line x1="60" y1="310" x2="60" y2="90" stroke="url(#dataGradB)" stroke-width="2" stroke-opacity="0.4" />
@@ -23,9 +21,9 @@
     <path d="M70 270 L140 230 L200 250 L260 160 L330 110" stroke="url(#dataGradA)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" />
     <path d="M70 270 L140 230 L200 250 L260 160 L330 110 L330 310 L70 310 Z" fill="url(#dataGradA)" fill-opacity="0.08" />
 
-    <circle cx="70" cy="270" r="6" fill="white" />
-    <circle cx="140" cy="230" r="6" fill="white" />
-    <circle cx="200" cy="250" r="6" fill="white" />
+    <circle cx="70" cy="270" r="6" fill="#27272a" />
+    <circle cx="140" cy="230" r="6" fill="#27272a" />
+    <circle cx="200" cy="250" r="6" fill="#27272a" />
     <circle cx="260" cy="160" r="7" fill="url(#dataGradA)" />
     <circle cx="330" cy="110" r="9" fill="url(#dataGradA)" />
     <circle cx="330" cy="110" r="16" stroke="url(#dataGradA)" stroke-width="1.5" stroke-opacity="0.45" />

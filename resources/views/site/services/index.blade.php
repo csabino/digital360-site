@@ -10,7 +10,7 @@
         <div class="mt-14 flex flex-wrap justify-center gap-8">
             @foreach ($services as $service)
                 <a href="{{ route('services.show', $service->slug) }}" data-match-height="services-cards" class="group flex flex-col w-full md:w-[calc((100%-4rem)/3)] overflow-hidden rounded-2xl border border-zinc-100 hover:border-orange-300 hover:shadow-md transition">
-                    <div class="h-40 w-full shrink-0 bg-zinc-900 flex items-center justify-center overflow-hidden">
+                    <div class="h-40 w-full shrink-0 bg-violet-50 flex items-center justify-center overflow-hidden">
                         @if ($service->image)
                             <img src="{{ Storage::url($service->image) }}" alt="{{ $service->title }}" class="max-h-full max-w-full object-contain">
                         @else

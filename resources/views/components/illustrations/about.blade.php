@@ -13,14 +13,12 @@
         </linearGradient>
     </defs>
 
-    <circle cx="200" cy="200" r="190" fill="white" fill-opacity="0.03" />
-
     <!-- overlapping people/team circles -->
     <circle cx="160" cy="210" r="78" fill="url(#aboutGradB)" fill-opacity="0.18" stroke="url(#aboutGradB)" stroke-width="2" stroke-opacity="0.5" />
     <circle cx="245" cy="180" r="78" fill="url(#aboutGradA)" fill-opacity="0.22" stroke="url(#aboutGradA)" stroke-width="2" />
 
     <!-- connecting link -->
-    <circle cx="202" cy="195" r="10" fill="white" fill-opacity="0.9" />
+    <circle cx="202" cy="195" r="10" fill="#27272a" />
 
     <!-- orbit of shared purpose -->
     <circle cx="200" cy="200" r="150" stroke="url(#aboutGradA)" stroke-width="1.5" stroke-opacity="0.25" stroke-dasharray="3 9" />

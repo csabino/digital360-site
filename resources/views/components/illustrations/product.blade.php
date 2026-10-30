@@ -13,15 +13,13 @@
         </linearGradient>
     </defs>
 
-    <circle cx="200" cy="200" r="190" fill="white" fill-opacity="0.03" />
-
     <!-- orbit path -->
     <circle cx="200" cy="200" r="140" stroke="url(#prodGradB)" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="3 9" />
 
     <!-- rocket body -->
     <g transform="rotate(45 200 200)">
         <path d="M200 110 C225 150 230 210 200 260 C170 210 175 150 200 110 Z" fill="url(#prodGradA)" />
-        <circle cx="200" cy="165" r="12" fill="white" fill-opacity="0.85" />
+        <circle cx="200" cy="165" r="12" fill="#27272a" />
         <path d="M182 230 L160 270 L192 252 Z" fill="url(#prodGradB)" />
         <path d="M218 230 L240 270 L208 252 Z" fill="url(#prodGradB)" />
         <path d="M192 255 C196 280 204 280 208 255 Z" fill="#fdba74" />

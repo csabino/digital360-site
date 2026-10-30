@@ -7,7 +7,7 @@
     <section class="mx-auto max-w-3xl px-6 py-20">
         <a href="{{ route('services.index') }}" class="text-sm font-medium text-orange-500">&larr; Voltar para serviços</a>
 
-        <div class="mt-6 w-full h-80 rounded-3xl bg-zinc-900 flex items-center justify-center overflow-hidden shadow-lg">
+        <div class="mt-6 w-full h-80 rounded-3xl bg-violet-50 flex items-center justify-center overflow-hidden shadow-lg">
             @if ($service->image)
                 <img src="{{ Storage::url($service->image) }}" alt="{{ $service->title }}" class="max-h-full max-w-full object-contain">
             @else

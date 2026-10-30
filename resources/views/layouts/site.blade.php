@@ -10,7 +10,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-white text-zinc-800 antialiased">
-    <header class="border-b border-zinc-100">
+    <header class="sticky top-0 z-50 bg-white border-b border-zinc-100">
         <div class="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
             <a href="{{ route('home') }}" class="flex items-center gap-2.5 text-xl font-bold tracking-tight text-zinc-900">
                 <x-brand-mark class="h-7 w-7 shrink-0" />
