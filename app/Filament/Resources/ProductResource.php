@@ -21,6 +21,10 @@ class ProductResource extends Resource
 
     protected static ?string $navigationLabel = 'Produtos';
 
+    protected static ?string $modelLabel = 'produto';
+
+    protected static ?string $pluralModelLabel = 'produtos';
+
     public static function form(Form $form): Form
     {
         return $form
@@ -31,6 +35,7 @@ class ProductResource extends Resource
                     ->live(onBlur: true)
                     ->afterStateUpdated(fn (string $operation, $state, Forms\Set $set) => $operation === 'create' ? $set('slug', \Illuminate\Support\Str::slug($state)) : null),
                 Forms\Components\TextInput::make('slug')
+                    ->label('Slug (URL)')
                     ->required()
                     ->unique(ignoreRecord: true),
                 Forms\Components\Textarea::make('excerpt')
@@ -55,6 +60,7 @@ class ProductResource extends Resource
                     ->helperText('Abre em uma nova aba quando o visitante clicar. Se deixar em branco, o botão abre o WhatsApp.')
                     ->columnSpanFull(),
                 Forms\Components\TextInput::make('order')
+                    ->label('Ordem')
                     ->required()
                     ->numeric()
                     ->default(0),
@@ -73,18 +79,22 @@ class ProductResource extends Resource
                     ->label('Nome')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('slug')
+                    ->label('Slug')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('order')
+                    ->label('Ordem')
                     ->numeric()
                     ->sortable(),
                 Tables\Columns\IconColumn::make('is_active')
                     ->label('Ativo')
                     ->boolean(),
                 Tables\Columns\TextColumn::make('created_at')
+                    ->label('Criado em')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
+                    ->label('Atualizado em')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),

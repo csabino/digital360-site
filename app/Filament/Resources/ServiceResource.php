@@ -19,18 +19,27 @@ class ServiceResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+    protected static ?string $navigationLabel = 'Serviços';
+
+    protected static ?string $modelLabel = 'serviço';
+
+    protected static ?string $pluralModelLabel = 'serviços';
+
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 Forms\Components\TextInput::make('title')
+                    ->label('Título')
                     ->required()
                     ->live(onBlur: true)
                     ->afterStateUpdated(fn (string $operation, $state, Forms\Set $set) => $operation === 'create' ? $set('slug', \Illuminate\Support\Str::slug($state)) : null),
                 Forms\Components\TextInput::make('slug')
+                    ->label('Slug (URL)')
                     ->required()
                     ->unique(ignoreRecord: true),
                 Forms\Components\TextInput::make('icon')
+                    ->label('Ícone')
                     ->helperText('Nome do ícone (ex: heroicon-o-chart-bar) ou deixe em branco.'),
                 Forms\Components\Textarea::make('excerpt')
                     ->label('Resumo (listagem)')
@@ -47,10 +56,12 @@ class ServiceResource extends Resource
                     ->helperText('Opcional. Aparece no card e na página do serviço.')
                     ->columnSpanFull(),
                 Forms\Components\TextInput::make('order')
+                    ->label('Ordem')
                     ->required()
                     ->numeric()
                     ->default(0),
                 Forms\Components\Toggle::make('is_active')
+                    ->label('Ativo')
                     ->required(),
             ]);
     }
@@ -60,21 +71,28 @@ class ServiceResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('title')
+                    ->label('Título')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('slug')
+                    ->label('Slug')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('icon')
+                    ->label('Ícone')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('order')
+                    ->label('Ordem')
                     ->numeric()
                     ->sortable(),
                 Tables\Columns\IconColumn::make('is_active')
+                    ->label('Ativo')
                     ->boolean(),
                 Tables\Columns\TextColumn::make('created_at')
+                    ->label('Criado em')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
+                    ->label('Atualizado em')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),

@@ -21,6 +21,10 @@ class PageResource extends Resource
 
     protected static ?string $navigationLabel = 'Páginas (Home/Sobre)';
 
+    protected static ?string $modelLabel = 'página';
+
+    protected static ?string $pluralModelLabel = 'páginas';
+
     public static function canCreate(): bool
     {
         return false;
@@ -31,11 +35,14 @@ class PageResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('slug')
+                    ->label('Slug (URL)')
                     ->required()
                     ->disabled(),
                 Forms\Components\TextInput::make('title')
+                    ->label('Título')
                     ->required(),
-                Forms\Components\TextInput::make('subtitle'),
+                Forms\Components\TextInput::make('subtitle')
+                    ->label('Subtítulo'),
                 Forms\Components\FileUpload::make('image')
                     ->label('Imagem de destaque')
                     ->image()
@@ -44,8 +51,10 @@ class PageResource extends Resource
                     ->helperText('Aparece ao lado do texto nesta página. Se não enviar nada, uma ilustração padrão é usada.')
                     ->columnSpanFull(),
                 Forms\Components\RichEditor::make('content')
+                    ->label('Conteúdo')
                     ->columnSpanFull(),
                 Forms\Components\TextInput::make('seo_description')
+                    ->label('Descrição para SEO')
                     ->helperText('Descrição curta usada em buscadores (meta description).')
                     ->maxLength(160),
             ]);
@@ -56,18 +65,24 @@ class PageResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('slug')
+                    ->label('Slug')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('title')
+                    ->label('Título')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('subtitle')
+                    ->label('Subtítulo')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('seo_description')
+                    ->label('Descrição SEO')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
+                    ->label('Criado em')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
+                    ->label('Atualizado em')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),

@@ -18,6 +18,10 @@ class ContactMessageResource extends Resource
 
     protected static ?string $navigationLabel = 'Mensagens de contato';
 
+    protected static ?string $modelLabel = 'mensagem de contato';
+
+    protected static ?string $pluralModelLabel = 'mensagens de contato';
+
     public static function canCreate(): bool
     {
         return false;
