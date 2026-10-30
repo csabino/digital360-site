@@ -18,3 +18,13 @@ if (! function_exists('card_frame_color')) {
         );
     }
 }
+
+if (! function_exists('product_carousel_seconds')) {
+    function product_carousel_seconds(): int
+    {
+        return \Illuminate\Support\Facades\Cache::rememberForever(
+            'site_setting_product_carousel_seconds',
+            fn () => \App\Models\SiteSetting::current()->product_carousel_seconds
+        );
+    }
+}
