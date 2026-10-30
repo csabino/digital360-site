@@ -9,15 +9,15 @@
 
         <div class="mt-14 flex flex-wrap justify-center gap-8">
             @foreach ($services as $service)
-                <a href="{{ route('services.show', $service->slug) }}" class="group block w-full md:w-[calc((100%-4rem)/3)] overflow-hidden rounded-2xl border border-zinc-100 hover:border-orange-300 hover:shadow-md transition">
-                    @if ($service->image)
-                        <img src="{{ Storage::url($service->image) }}" alt="{{ $service->title }}" class="h-40 w-full object-cover">
-                    @else
-                        <div class="h-40 w-full bg-zinc-900 flex items-center justify-center overflow-hidden">
+                <a href="{{ route('services.show', $service->slug) }}" data-match-height="services-cards" class="group flex flex-col w-full md:w-[calc((100%-4rem)/3)] overflow-hidden rounded-2xl border border-zinc-100 hover:border-orange-300 hover:shadow-md transition">
+                    <div class="h-40 w-full shrink-0 bg-zinc-900 flex items-center justify-center overflow-hidden">
+                        @if ($service->image)
+                            <img src="{{ Storage::url($service->image) }}" alt="{{ $service->title }}" class="max-h-full max-w-full object-contain">
+                        @else
                             <x-service-illustration :slug="$service->slug" class="h-56 w-56" />
-                        </div>
-                    @endif
-                    <div class="p-6">
+                        @endif
+                    </div>
+                    <div class="p-6 flex flex-col flex-1">
                         @if ($service->icon)
                             <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-orange-50 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition">
                                 <x-dynamic-component :component="$service->icon" class="h-6 w-6" />

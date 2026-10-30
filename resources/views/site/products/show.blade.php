@@ -7,13 +7,13 @@
     <section class="mx-auto max-w-3xl px-6 py-20">
         <a href="{{ route('products.index') }}" class="text-sm font-medium text-orange-500">&larr; Voltar para produtos</a>
 
-        @if ($product->image)
-            <img src="{{ Storage::url($product->image) }}" alt="{{ $product->title }}" class="mt-6 w-full rounded-3xl object-cover max-h-80 shadow-lg">
-        @else
-            <div class="mt-6 w-full rounded-3xl bg-zinc-900 flex items-center justify-center overflow-hidden max-h-80">
-                <x-illustrations.product class="h-72 w-72 py-6" />
-            </div>
-        @endif
+        <div class="mt-6 w-full h-80 rounded-3xl bg-zinc-900 flex items-center justify-center overflow-hidden shadow-lg">
+            @if ($product->image)
+                <img src="{{ Storage::url($product->image) }}" alt="{{ $product->title }}" class="max-h-full max-w-full object-contain">
+            @else
+                <x-illustrations.product class="h-72 w-72" />
+            @endif
+        </div>
 
         <h1 class="mt-6 text-3xl md:text-4xl font-bold tracking-tight text-zinc-900">{{ $product->title }}</h1>
         <div class="prose prose-zinc mt-8 max-w-none text-zinc-700">
