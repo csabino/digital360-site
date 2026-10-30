@@ -45,7 +45,9 @@ class ProductResource extends Resource
                     ->image()
                     ->directory('products')
                     ->imageEditor()
-                    ->helperText('Opcional. Aparece no card e na página do produto.')
+                    ->imageEditorAspectRatios(['1376:768'])
+                    ->rules(['dimensions:width=1376,height=768'])
+                    ->helperText('Opcional. Tamanho obrigatório: 1376x768 pixels (outras proporções serão rejeitadas).')
                     ->columnSpanFull(),
                 Forms\Components\TextInput::make('external_url')
                     ->label('Link do produto')

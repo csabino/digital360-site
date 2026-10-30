@@ -9,11 +9,11 @@
             <a href="{{ route('products.index') }}" class="text-sm font-medium text-orange-500">&larr; Voltar para produtos</a>
 
             <div class="mt-6 flex flex-col md:flex-row md:items-center gap-8 md:gap-12">
-                <div class="w-48 h-48 mx-auto md:mx-0 shrink-0 rounded-3xl flex items-center justify-center overflow-hidden shadow-lg" style="background-color: {{ card_frame_color() }}">
+                <div class="w-full md:w-64 aspect-[43/24] mx-auto md:mx-0 shrink-0 rounded-3xl flex items-center justify-center overflow-hidden shadow-lg" style="background-color: {{ card_frame_color() }}">
                     @if ($product->image)
-                        <img src="{{ Storage::url($product->image) }}" alt="{{ $product->title }}" class="max-h-full max-w-full object-contain">
+                        <img src="{{ Storage::url($product->image) }}" alt="{{ $product->title }}" class="h-full w-full object-cover">
                     @else
-                        <x-illustrations.product class="h-36 w-36" />
+                        <x-illustrations.product class="h-28 w-28" />
                     @endif
                 </div>
 

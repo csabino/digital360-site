@@ -10,11 +10,11 @@
         <div class="mt-14 flex flex-wrap justify-center gap-8">
             @foreach ($products as $product)
                 <a href="{{ route('products.show', $product->slug) }}" data-match-height="products-cards" class="group flex flex-col w-full md:w-[calc((100%-4rem)/3)] overflow-hidden rounded-2xl border border-zinc-100 hover:border-orange-300 hover:shadow-md transition">
-                    <div class="h-40 w-full shrink-0 flex items-center justify-center overflow-hidden" style="background-color: {{ card_frame_color() }}">
+                    <div class="aspect-[43/24] w-full shrink-0 flex items-center justify-center overflow-hidden" style="background-color: {{ card_frame_color() }}">
                         @if ($product->image)
-                            <img src="{{ Storage::url($product->image) }}" alt="{{ $product->title }}" class="max-h-full max-w-full object-contain">
+                            <img src="{{ Storage::url($product->image) }}" alt="{{ $product->title }}" class="h-full w-full object-cover">
                         @else
-                            <x-illustrations.product class="h-56 w-56" />
+                            <x-illustrations.product class="h-28 w-28" />
                         @endif
                     </div>
                     <div class="p-6 flex flex-col flex-1">
