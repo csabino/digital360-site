@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Page;
-use App\Models\Product;
 use App\Models\Service;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -61,16 +60,5 @@ class DatabaseSeeder extends Seeder
                 $service + ['is_active' => true]
             );
         }
-
-        Product::firstOrCreate(
-            ['slug' => 'produto-exemplo'],
-            [
-                'title' => 'Produto exemplo',
-                'excerpt' => 'Edite ou exclua este produto de exemplo e cadastre os seus no painel.',
-                'description' => '<p>Este é um produto de exemplo. Edite o título, a imagem, a descrição e o link no painel administrativo.</p>',
-                'order' => 1,
-                'is_active' => true,
-            ]
-        );
     }
 }
