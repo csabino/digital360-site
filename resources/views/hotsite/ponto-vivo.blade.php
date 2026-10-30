@@ -9,8 +9,8 @@
     <meta property="og:title" content="PontoVivo — Escritório virtual com presença em tempo real e auditoria completa">
     <meta property="og:description" content="Presença em tempo real, reuniões organizadas e auditoria completa — 100% na nuvem, pronto pra usar.">
     <meta property="og:url" content="{{ url()->current() }}">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <meta name="theme-color" content="#4338ca">
+    <link rel="icon" type="image/svg+xml" href="/pontovivo-favicon.svg">
+    <meta name="theme-color" content="#10b981">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-white text-slate-800 antialiased">
@@ -20,7 +20,7 @@
         <div class="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
             <span class="flex items-center gap-2 text-xl font-bold tracking-tight text-slate-900">
                 <span class="h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
-                Ponto<span class="text-indigo-600">Vivo</span>
+                <span>Ponto<span class="text-indigo-600">Vivo</span></span>
             </span>
             <a href="{{ whatsapp_url('Olá! Quero saber mais sobre o PontoVivo.') }}" target="_blank" rel="noopener" class="hidden sm:inline-flex rounded-full bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-indigo-700 transition">
                 Falar no WhatsApp
@@ -60,7 +60,7 @@
                 <div class="flex items-center justify-between px-5 py-4 border-b border-white/10">
                     <span class="flex items-center gap-2 text-sm font-bold text-white">
                         <span class="h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
-                        Ponto<span class="text-indigo-400">Vivo</span>
+                        <span>Ponto<span class="text-indigo-400">Vivo</span></span>
                     </span>
                     <span class="flex items-center gap-2 text-xs text-slate-400">
                         Olá, Sabino
@@ -83,7 +83,9 @@
                             Não disponível
                         </span>
                         <p class="mt-1 text-xs text-slate-400">Offline / Descanso / Almoço</p>
-                        <div class="mt-3 rounded-lg bg-white/5 px-3 py-2 text-xs text-slate-400">Sala vazia</div>
+                        <div class="mt-3 flex items-center gap-1.5 rounded-lg bg-white/5 px-3 py-2">
+                            <span class="h-6 w-6 shrink-0 rounded-full bg-slate-600 flex items-center justify-center text-[10px] font-semibold text-white">T</span>
+                        </div>
                     </div>
                     <div class="rounded-xl border border-white/10 bg-white/5 p-4">
                         <span class="flex items-center gap-2 text-sm font-semibold text-white">
@@ -91,7 +93,9 @@
                             Diretoria
                         </span>
                         <p class="mt-1 text-xs text-slate-400">Diretoria Executiva</p>
-                        <div class="mt-3 rounded-lg bg-white/5 px-3 py-2 text-xs text-slate-400">Sala vazia</div>
+                        <div class="mt-3 flex items-center gap-1.5 rounded-lg bg-white/10 px-3 py-2">
+                            <span class="h-6 w-6 shrink-0 rounded-full bg-emerald-500 flex items-center justify-center text-[10px] font-semibold text-white">M</span>
+                        </div>
                     </div>
                     <div class="rounded-xl border border-white/10 bg-white/5 p-4">
                         <span class="flex items-center gap-2 text-sm font-semibold text-white">
@@ -99,7 +103,10 @@
                             Comercial
                         </span>
                         <p class="mt-1 text-xs text-slate-400">Diretoria Comercial</p>
-                        <div class="mt-3 rounded-lg bg-white/5 px-3 py-2 text-xs text-slate-400">Sala vazia</div>
+                        <div class="mt-3 flex items-center gap-1.5 rounded-lg bg-white/10 px-3 py-2">
+                            <span class="h-6 w-6 shrink-0 rounded-full bg-indigo-500 ring-2 ring-slate-950 flex items-center justify-center text-[10px] font-semibold text-white">R</span>
+                            <span class="-ml-3 h-6 w-6 shrink-0 rounded-full bg-sky-500 ring-2 ring-slate-950 flex items-center justify-center text-[10px] font-semibold text-white">A</span>
+                        </div>
                     </div>
                     <div class="rounded-xl border border-white/10 bg-white/5 p-4">
                         <span class="flex items-center gap-2 text-sm font-semibold text-white">
@@ -107,7 +114,9 @@
                             Financeiro
                         </span>
                         <p class="mt-1 text-xs text-slate-400">Financeiro / Comercial</p>
-                        <div class="mt-3 rounded-lg bg-white/5 px-3 py-2 text-xs text-slate-400">Sala vazia</div>
+                        <div class="mt-3 flex items-center gap-1.5 rounded-lg bg-white/10 px-3 py-2">
+                            <span class="h-6 w-6 shrink-0 rounded-full bg-amber-500 flex items-center justify-center text-[10px] font-semibold text-white">L</span>
+                        </div>
                     </div>
                     <div class="rounded-xl border border-white/10 bg-white/5 p-4">
                         <span class="flex items-center gap-2 text-sm font-semibold text-white">
@@ -115,7 +124,9 @@
                             Operações
                         </span>
                         <p class="mt-1 text-xs text-slate-400">Gerência de Operações</p>
-                        <div class="mt-3 rounded-lg bg-white/5 px-3 py-2 text-xs text-slate-400">Sala vazia</div>
+                        <div class="mt-3 flex items-center gap-1.5 rounded-lg bg-white/10 px-3 py-2">
+                            <span class="h-6 w-6 shrink-0 rounded-full bg-indigo-500 flex items-center justify-center text-[10px] font-semibold text-white">V</span>
+                        </div>
                     </div>
                     <div class="rounded-xl border border-white/10 bg-white/5 p-4">
                         <span class="flex items-center gap-2 text-sm font-semibold text-white">
@@ -123,7 +134,10 @@
                             Tecnologia
                         </span>
                         <p class="mt-1 text-xs text-slate-400">Gerência de Tecnologia</p>
-                        <div class="mt-3 rounded-lg bg-white/5 px-3 py-2 text-xs text-slate-400">Sala vazia</div>
+                        <div class="mt-3 flex items-center gap-1.5 rounded-lg bg-white/10 px-3 py-2">
+                            <span class="h-6 w-6 shrink-0 rounded-full bg-sky-500 ring-2 ring-slate-950 flex items-center justify-center text-[10px] font-semibold text-white">K</span>
+                            <span class="-ml-3 h-6 w-6 shrink-0 rounded-full bg-indigo-500 ring-2 ring-slate-950 flex items-center justify-center text-[10px] font-semibold text-white">P</span>
+                        </div>
                     </div>
                     <div class="rounded-xl border border-indigo-400/30 bg-indigo-500/10 p-4">
                         <span class="flex items-center gap-2 text-sm font-semibold text-white">
@@ -131,9 +145,10 @@
                             Produtos
                         </span>
                         <p class="mt-1 text-xs text-slate-400">Gerência de Produtos</p>
-                        <div class="mt-3 flex items-center gap-2 rounded-lg bg-white/10 px-3 py-2">
-                            <span class="h-6 w-6 shrink-0 rounded-full bg-indigo-500 flex items-center justify-center text-[10px] font-semibold text-white">S</span>
-                            <span class="text-xs text-white">Sabino</span>
+                        <div class="mt-3 flex items-center gap-1.5 rounded-lg bg-white/10 px-3 py-2">
+                            <span class="h-6 w-6 shrink-0 rounded-full bg-indigo-500 ring-2 ring-slate-950 flex items-center justify-center text-[10px] font-semibold text-white">S</span>
+                            <span class="-ml-3 h-6 w-6 shrink-0 rounded-full bg-emerald-500 ring-2 ring-slate-950 flex items-center justify-center text-[10px] font-semibold text-white">J</span>
+                            <span class="ml-1.5 text-xs text-white">Sabino</span>
                         </div>
                     </div>
                     <div class="rounded-xl border border-white/10 bg-white/5 p-4">
@@ -142,7 +157,9 @@
                             TI
                         </span>
                         <p class="mt-1 text-xs text-slate-400">Infraestrutura</p>
-                        <div class="mt-3 rounded-lg bg-white/5 px-3 py-2 text-xs text-slate-400">Sala vazia</div>
+                        <div class="mt-3 flex items-center gap-1.5 rounded-lg bg-white/10 px-3 py-2">
+                            <span class="h-6 w-6 shrink-0 rounded-full bg-sky-500 flex items-center justify-center text-[10px] font-semibold text-white">D</span>
+                        </div>
                     </div>
                 </div>
             </div>
