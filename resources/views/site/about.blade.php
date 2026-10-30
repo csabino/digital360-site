@@ -17,7 +17,7 @@
             @if ($page->image)
                 <img src="{{ Storage::url($page->image) }}" alt="{{ $page->title }}" class="w-full rounded-3xl object-cover aspect-square lg:aspect-[4/3] shadow-lg">
             @else
-                <x-hero-illustration class="w-full max-w-md mx-auto" />
+                <x-illustrations.about class="w-full max-w-md mx-auto" />
             @endif
         </div>
     </section>

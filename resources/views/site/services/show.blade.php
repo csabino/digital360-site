@@ -9,6 +9,10 @@
 
         @if ($service->image)
             <img src="{{ Storage::url($service->image) }}" alt="{{ $service->title }}" class="mt-6 w-full rounded-3xl object-cover max-h-80 shadow-lg">
+        @else
+            <div class="mt-6 w-full rounded-3xl bg-zinc-900 flex items-center justify-center overflow-hidden max-h-80">
+                <x-service-illustration :slug="$service->slug" class="h-72 w-72 py-6" />
+            </div>
         @endif
 
         @if ($service->icon)

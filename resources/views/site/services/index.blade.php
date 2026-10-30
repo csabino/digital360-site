@@ -12,6 +12,10 @@
                 <a href="{{ route('services.show', $service->slug) }}" class="group block overflow-hidden rounded-2xl border border-zinc-100 hover:border-orange-300 hover:shadow-md transition">
                     @if ($service->image)
                         <img src="{{ Storage::url($service->image) }}" alt="{{ $service->title }}" class="h-40 w-full object-cover">
+                    @else
+                        <div class="h-40 w-full bg-zinc-900 flex items-center justify-center overflow-hidden">
+                            <x-service-illustration :slug="$service->slug" class="h-56 w-56" />
+                        </div>
                     @endif
                     <div class="p-6">
                         @if ($service->icon)
