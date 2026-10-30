@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PontoVivo — Escritório virtual com presença em tempo real e auditoria completa</title>
-    <meta name="description" content="PontoVivo é o escritório virtual self-hosted que mostra quem está online em tempo real, organiza reuniões com histórico completo e registra tudo com auditoria total — rodando na sua própria infraestrutura.">
+    <meta name="description" content="PontoVivo é o escritório virtual 100% na nuvem que mostra quem está online em tempo real, organiza reuniões com histórico completo e registra tudo com auditoria total.">
     <meta property="og:type" content="website">
     <meta property="og:title" content="PontoVivo — Escritório virtual com presença em tempo real e auditoria completa">
-    <meta property="og:description" content="Presença em tempo real, reuniões organizadas e auditoria completa — self-hosted, sem depender de nuvem de terceiros.">
+    <meta property="og:description" content="Presença em tempo real, reuniões organizadas e auditoria completa — 100% na nuvem, pronto pra usar.">
     <meta property="og:url" content="{{ url()->current() }}">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <meta name="theme-color" content="#4338ca">
@@ -37,13 +37,13 @@
             <div class="text-center lg:text-left">
                 <p class="inline-flex items-center gap-2 text-xs md:text-sm font-semibold uppercase tracking-wide text-emerald-400">
                     <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
-                    Escritório virtual self-hosted
+                    Escritório virtual 100% na nuvem
                 </p>
                 <h1 class="mt-5 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-tight">
-                    Sua equipe sempre visível. Suas reuniões sempre organizadas. Seus dados sempre seus.
+                    Sua equipe sempre visível. Suas reuniões sempre organizadas. Tudo auditado.
                 </h1>
                 <p class="mt-6 text-base md:text-lg text-slate-300 max-w-xl mx-auto lg:mx-0">
-                    O PontoVivo mostra quem da sua equipe está online em tempo real, organiza reuniões com histórico completo e registra cada ação com auditoria total — tudo rodando na sua própria infraestrutura, sem depender de nuvem de terceiros.
+                    O PontoVivo mostra quem da sua equipe está online em tempo real, organiza reuniões com histórico completo e registra cada ação com auditoria total — hospedado pela digital360 em infraestrutura global, pronto pra usar sem instalação.
                 </p>
                 <div class="mt-10 flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4">
                     <a href="{{ whatsapp_url('Olá! Quero saber mais sobre o PontoVivo.') }}" target="_blank" rel="noopener" class="rounded-full bg-emerald-500 px-6 py-3 text-white font-semibold hover:bg-emerald-600 transition">
@@ -119,7 +119,7 @@
     <section class="mx-auto max-w-6xl px-6 py-16 md:py-24">
         <div class="text-center max-w-2xl mx-auto">
             <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900">Tudo que o seu escritório virtual precisa</h2>
-            <p class="mt-4 text-slate-600">Presença, reuniões e auditoria num só lugar — sem depender de ferramentas soltas ou de nuvem de terceiros.</p>
+            <p class="mt-4 text-slate-600">Presença, reuniões e auditoria num só lugar — sem depender de ferramentas soltas.</p>
         </div>
 
         <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -148,15 +148,15 @@
                 <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
                 </span>
-                <h3 class="mt-4 text-lg font-semibold text-slate-900">Self-hosted</h3>
-                <p class="mt-2 text-sm text-slate-600">Roda na sua própria infraestrutura. Seus dados nunca saem do seu controle nem dependem de nuvem de terceiros.</p>
+                <h3 class="mt-4 text-lg font-semibold text-slate-900">100% na nuvem</h3>
+                <p class="mt-2 text-sm text-slate-600">Hospedado pela digital360 em infraestrutura global, com segurança e redundância — sem servidor, sem instalação e sem manutenção da sua parte.</p>
             </div>
             <div class="rounded-2xl border border-slate-100 p-6 hover:border-indigo-200 hover:shadow-md transition">
                 <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"/></svg>
                 </span>
-                <h3 class="mt-4 text-lg font-semibold text-slate-900">Implantação rápida</h3>
-                <p class="mt-2 text-sm text-slate-600">Suba o sistema e comece a usar em poucas horas, sem contrato longo nem dependência de fornecedor externo.</p>
+                <h3 class="mt-4 text-lg font-semibold text-slate-900">Ativação rápida</h3>
+                <p class="mt-2 text-sm text-slate-600">Contrate e comece a usar em poucas horas, sem instalação nem configuração de servidor.</p>
             </div>
             <div class="rounded-2xl border border-slate-100 p-6 hover:border-indigo-200 hover:shadow-md transition">
                 <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
@@ -173,14 +173,14 @@
         <div class="mx-auto max-w-6xl px-6">
             <div class="text-center max-w-2xl mx-auto">
                 <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900">Como funciona</h2>
-                <p class="mt-4 text-slate-600">Do primeiro deploy ao dia a dia da equipe, em quatro passos simples.</p>
+                <p class="mt-4 text-slate-600">Da contratação ao dia a dia da equipe, em quatro passos simples.</p>
             </div>
 
             <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
                 <div class="text-center lg:text-left">
                     <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-indigo-600 text-white font-bold">1</span>
-                    <h3 class="mt-4 font-semibold text-slate-900">Instale no seu servidor</h3>
-                    <p class="mt-2 text-sm text-slate-600">Self-hosted, sem depender de nuvem de terceiros.</p>
+                    <h3 class="mt-4 font-semibold text-slate-900">Contrate o serviço</h3>
+                    <p class="mt-2 text-sm text-slate-600">100% na nuvem, sem instalação nem servidor próprio.</p>
                 </div>
                 <div class="text-center lg:text-left">
                     <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-indigo-600 text-white font-bold">2</span>
@@ -208,24 +208,24 @@
         <div class="mt-10 space-y-4">
             <details class="group rounded-2xl border border-slate-100 p-5">
                 <summary class="flex cursor-pointer items-center justify-between font-medium text-slate-900">
-                    Preciso de um servidor próprio para usar o PontoVivo?
+                    Preciso instalar algo no meu servidor?
                     <span class="ml-4 shrink-0 text-indigo-500 group-open:rotate-45 transition">+</span>
                 </summary>
-                <p class="mt-3 text-sm text-slate-600">Sim — é exatamente essa a proposta: você instala no seu ambiente e mantém total controle sobre os dados.</p>
+                <p class="mt-3 text-sm text-slate-600">Não — o PontoVivo é 100% na nuvem, hospedado pela digital360. Você só contrata e começa a usar, sem instalação nem manutenção de infraestrutura da sua parte.</p>
             </details>
             <details class="group rounded-2xl border border-slate-100 p-5">
                 <summary class="flex cursor-pointer items-center justify-between font-medium text-slate-900">
                     Meus dados ficam seguros?
                     <span class="ml-4 shrink-0 text-indigo-500 group-open:rotate-45 transition">+</span>
                 </summary>
-                <p class="mt-3 text-sm text-slate-600">Por ser self-hosted, os dados nunca saem da sua infraestrutura — você decide onde ficam armazenados e quem tem acesso.</p>
+                <p class="mt-3 text-sm text-slate-600">Sim — a infraestrutura é hospedada em ambiente global, com os requisitos de segurança e redundância necessários para garantir o bom funcionamento dentro das normas técnicas vigentes no mercado.</p>
             </details>
             <details class="group rounded-2xl border border-slate-100 p-5">
                 <summary class="flex cursor-pointer items-center justify-between font-medium text-slate-900">
                     Quantos usuários posso cadastrar?
                     <span class="ml-4 shrink-0 text-indigo-500 group-open:rotate-45 transition">+</span>
                 </summary>
-                <p class="mt-3 text-sm text-slate-600">Não há limite artificial — a capacidade depende apenas do servidor onde o sistema está instalado.</p>
+                <p class="mt-3 text-sm text-slate-600">Não há limite — o plano é vendido por usuário, então você contrata exatamente a quantidade que a sua equipe precisa.</p>
             </details>
             <details class="group rounded-2xl border border-slate-100 p-5">
                 <summary class="flex cursor-pointer items-center justify-between font-medium text-slate-900">
