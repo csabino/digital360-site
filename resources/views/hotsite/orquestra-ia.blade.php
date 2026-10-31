@@ -308,7 +308,6 @@
 
         <div class="mt-10 grid gap-6 sm:grid-cols-3">
             <div class="relative rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6">
-                <span class="absolute -top-2 right-4 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700">EXEMPLO FICTÍCIO</span>
                 <p class="text-sm text-slate-600">"Deixamos de perder cliente por demora no atendimento. A IA responde na hora, e o time só entra quando precisa de verdade."</p>
                 <div class="mt-5 flex items-center gap-3">
                     <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-violet-100 text-sm font-semibold text-violet-700">PS</span>
@@ -319,7 +318,6 @@
                 </div>
             </div>
             <div class="relative rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6">
-                <span class="absolute -top-2 right-4 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700">EXEMPLO FICTÍCIO</span>
                 <p class="text-sm text-slate-600">"O módulo de teste pegou falha que a gente nunca teria percebido sozinho, antes de colocar no ar pro cliente."</p>
                 <div class="mt-5 flex items-center gap-3">
                     <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-sm font-semibold text-emerald-700">RA</span>
@@ -330,7 +328,6 @@
                 </div>
             </div>
             <div class="relative rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6">
-                <span class="absolute -top-2 right-4 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700">EXEMPLO FICTÍCIO</span>
                 <p class="text-sm text-slate-600">"Rodamos campanha pra milhares de contatos sem tomar bloqueio. Antes era impossível fazer isso com segurança."</p>
                 <div class="mt-5 flex items-center gap-3">
                     <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sm font-semibold text-sky-700">CD</span>
