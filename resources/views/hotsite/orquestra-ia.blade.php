@@ -199,50 +199,50 @@
             <p class="mt-4 text-slate-600">Sem robô de decorar resposta — IA de verdade, testada antes de ir pro ar.</p>
         </div>
 
-        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div class="rounded-2xl border border-slate-100 p-6 hover:border-violet-200 hover:shadow-md transition">
+        <div class="mt-12 flex flex-wrap justify-center gap-8">
+            <div class="w-full md:w-[calc((100%-4rem)/3)] rounded-2xl border border-slate-100 p-6 hover:border-violet-200 hover:shadow-md transition">
                 <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-violet-50 text-violet-600">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.6L19 10l-5.2 1.4L12 17l-1.8-5.6L5 10l5.2-1.4L12 3z"/></svg>
                 </span>
                 <h3 class="mt-4 text-lg font-semibold text-slate-900">Atendimento com IA de verdade</h3>
                 <p class="mt-2 text-sm text-slate-600">Crie quantos assistentes quiser, cada um com seu número, personalidade e base de conhecimento. Escolha o motor de IA por assistente — GPT, Gemini, Claude ou Grok — e agende reuniões direto na conversa, com link de Meet e convite automático.</p>
             </div>
-            <div class="rounded-2xl border border-slate-100 p-6 hover:border-violet-200 hover:shadow-md transition">
+            <div class="w-full md:w-[calc((100%-4rem)/3)] rounded-2xl border border-slate-100 p-6 hover:border-violet-200 hover:shadow-md transition">
                 <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H7l-3 3V4z"/></svg>
                 </span>
                 <h3 class="mt-4 text-lg font-semibold text-slate-900">Base de conhecimento que aprende seu negócio</h3>
                 <p class="mt-2 text-sm text-slate-600">Suba PDFs e documentos, ou deixe a IA varrer seu site institucional sozinha. Tudo organizado num painel próprio, pronto pra consultar e exportar.</p>
             </div>
-            <div class="rounded-2xl border border-slate-100 p-6 hover:border-violet-200 hover:shadow-md transition">
+            <div class="w-full md:w-[calc((100%-4rem)/3)] rounded-2xl border border-slate-100 p-6 hover:border-violet-200 hover:shadow-md transition">
                 <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-amber-50 text-amber-600">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1015-6.7M3 12V6m0 6h6"/></svg>
                 </span>
                 <h3 class="mt-4 text-lg font-semibold text-slate-900">Nunca mais perca um cliente calado</h3>
                 <p class="mt-2 text-sm text-slate-600">Se o cliente para de responder, o sistema retoma a conversa nos intervalos que você configurar — e encerra educadamente se o silêncio continuar. Pesquisa de satisfação disparada no fim do atendimento.</p>
             </div>
-            <div class="rounded-2xl border border-slate-100 p-6 hover:border-violet-200 hover:shadow-md transition">
+            <div class="w-full md:w-[calc((100%-4rem)/3)] rounded-2xl border border-slate-100 p-6 hover:border-violet-200 hover:shadow-md transition">
                 <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-sky-50 text-sky-600">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3L4 7v10l6 4 6-4V7l-6-4z"/><path d="M8 11l2.5 2.5L16 8"/></svg>
                 </span>
                 <h3 class="mt-4 text-lg font-semibold text-slate-900">Teste o assistente antes do cliente testar por você</h3>
                 <p class="mt-2 text-sm text-slate-600">Módulo de QA automatizado simula clientes reais conversando com seu assistente e entrega um relatório com cada falha já classificada — e a sugestão exata de correção.</p>
             </div>
-            <div class="rounded-2xl border border-slate-100 p-6 hover:border-violet-200 hover:shadow-md transition">
+            <div class="w-full md:w-[calc((100%-4rem)/3)] rounded-2xl border border-slate-100 p-6 hover:border-violet-200 hover:shadow-md transition">
                 <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-violet-50 text-violet-600">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-7-7 18-2-8-9-3z"/></svg>
                 </span>
                 <h3 class="mt-4 text-lg font-semibold text-slate-900">Campanhas em massa sem tomar bloqueio</h3>
                 <p class="mt-2 text-sm text-slate-600">Lista sanitizada automaticamente, disparo em lotes espaçados e mensagens variadas pela IA — sem parecer robô. Templates aprovados pela Meta ou texto livre, personalizado pelo nome do contato.</p>
             </div>
-            <div class="rounded-2xl border border-slate-100 p-6 hover:border-violet-200 hover:shadow-md transition">
+            <div class="w-full md:w-[calc((100%-4rem)/3)] rounded-2xl border border-slate-100 p-6 hover:border-violet-200 hover:shadow-md transition">
                 <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3 2.7-5 6-5s6 2 6 5M14.5 15c2.5 0 5 1.6 5 4.5"/></svg>
                 </span>
                 <h3 class="mt-4 text-lg font-semibold text-slate-900">IA e seu time humano, sem fricção</h3>
                 <p class="mt-2 text-sm text-slate-600">Quando a IA não resolver, ela mesma identifica e transfere pro time certo, com protocolo e histórico centralizado. Gerencie agentes, agenda e setores num só lugar.</p>
             </div>
-            <div class="rounded-2xl border border-slate-100 p-6 hover:border-violet-200 hover:shadow-md transition sm:col-span-2 lg:col-span-1">
+            <div class="w-full md:w-[calc((100%-4rem)/3)] rounded-2xl border border-slate-100 p-6 hover:border-violet-200 hover:shadow-md transition">
                 <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-sky-50 text-sky-600">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="7" height="7" rx="1"/><rect x="14" y="4" width="7" height="7" rx="1"/><rect x="3" y="15" width="7" height="5" rx="1"/><rect x="14" y="15" width="7" height="5" rx="1"/></svg>
                 </span>
