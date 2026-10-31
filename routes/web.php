@@ -14,3 +14,4 @@ Route::post('/contato', [SiteController::class, 'contactStore'])->name('contact.
 
 // Hotsites de produtos — páginas estáticas sem menu/rodapé, linkadas apenas via "Link do produto" no painel.
 Route::view('/ponto-vivo', 'hotsite.ponto-vivo')->name('hotsite.ponto-vivo');
+Route::view('/orquestra-ia', 'hotsite.orquestra-ia')->name('hotsite.orquestra-ia');
