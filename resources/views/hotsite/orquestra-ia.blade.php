@@ -298,48 +298,6 @@
         </div>
     </section>
 
-    {{-- Prova social --}}
-    {{-- inserir depoimentos/logos de clientes reais aqui --}}
-    <section class="mx-auto max-w-5xl px-6 py-16 md:py-24">
-        <div class="text-center max-w-2xl mx-auto">
-            <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900">O que dizem sobre o Orquestra IA</h2>
-            <p class="mt-3 text-xs font-semibold uppercase tracking-wide text-amber-600">Exemplo ilustrativo — substituir por depoimentos reais antes de publicar</p>
-        </div>
-
-        <div class="mt-10 grid gap-6 sm:grid-cols-3">
-            <div class="relative rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6">
-                <p class="text-sm text-slate-600">"Deixamos de perder cliente por demora no atendimento. A IA responde na hora, e o time só entra quando precisa de verdade."</p>
-                <div class="mt-5 flex items-center gap-3">
-                    <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-violet-100 text-sm font-semibold text-violet-700">PS</span>
-                    <div>
-                        <p class="text-xs font-semibold text-slate-700">Patrícia Souza</p>
-                        <p class="text-xs text-slate-500">Gerente de Atendimento — Ecomm Varejo (fictício)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="relative rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6">
-                <p class="text-sm text-slate-600">"O módulo de teste pegou falha que a gente nunca teria percebido sozinho, antes de colocar no ar pro cliente."</p>
-                <div class="mt-5 flex items-center gap-3">
-                    <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-sm font-semibold text-emerald-700">RA</span>
-                    <div>
-                        <p class="text-xs font-semibold text-slate-700">Rodrigo Alves</p>
-                        <p class="text-xs text-slate-500">Head de CX — Nexa Soluções (fictício)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="relative rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6">
-                <p class="text-sm text-slate-600">"Rodamos campanha pra milhares de contatos sem tomar bloqueio. Antes era impossível fazer isso com segurança."</p>
-                <div class="mt-5 flex items-center gap-3">
-                    <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sm font-semibold text-sky-700">CD</span>
-                    <div>
-                        <p class="text-xs font-semibold text-slate-700">Camila Duarte</p>
-                        <p class="text-xs text-slate-500">Coordenadora de Marketing — Vantte Serviços (fictício)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     {{-- CTA final --}}
     <section class="bg-slate-900 text-white">
         <div class="mx-auto max-w-4xl px-6 py-16 md:py-20 text-center">
