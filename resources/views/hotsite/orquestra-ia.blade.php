@@ -140,19 +140,19 @@
         <div class="mt-10 grid gap-6 sm:grid-cols-3">
             <div class="rounded-2xl border border-red-100 bg-red-50/50 p-6">
                 <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-red-100 text-red-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
                 </span>
                 <p class="mt-4 text-sm text-slate-700">Cliente manda mensagem fora do horário e some.</p>
             </div>
             <div class="rounded-2xl border border-red-100 bg-red-50/50 p-6">
                 <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-red-100 text-red-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V14M10 20V9M16 20V4"/></svg>
                 </span>
                 <p class="mt-4 text-sm text-slate-700">Atendente humano não escala quando as vendas crescem.</p>
             </div>
             <div class="rounded-2xl border border-red-100 bg-red-50/50 p-6">
                 <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-red-100 text-red-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 9a3.5 3.5 0 116.2 2.2c-.9 1-1.7 1.4-1.7 2.8"/><path d="M12 17h.01"/></svg>
                 </span>
                 <p class="mt-4 text-sm text-slate-700">Você não sabe se o robô de atendimento está realmente respondendo certo até o cliente reclamar.</p>
             </div>
@@ -308,19 +308,37 @@
 
         <div class="mt-10 grid gap-6 sm:grid-cols-3">
             <div class="relative rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6">
-                <span class="absolute -top-2 right-4 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700">EXEMPLO</span>
+                <span class="absolute -top-2 right-4 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700">EXEMPLO FICTÍCIO</span>
                 <p class="text-sm text-slate-600">"Deixamos de perder cliente por demora no atendimento. A IA responde na hora, e o time só entra quando precisa de verdade."</p>
-                <p class="mt-4 text-xs font-semibold text-slate-500">Nome, Cargo — Empresa (placeholder)</p>
+                <div class="mt-5 flex items-center gap-3">
+                    <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-violet-100 text-sm font-semibold text-violet-700">PS</span>
+                    <div>
+                        <p class="text-xs font-semibold text-slate-700">Patrícia Souza</p>
+                        <p class="text-xs text-slate-500">Gerente de Atendimento — Ecomm Varejo (fictício)</p>
+                    </div>
+                </div>
             </div>
             <div class="relative rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6">
-                <span class="absolute -top-2 right-4 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700">EXEMPLO</span>
+                <span class="absolute -top-2 right-4 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700">EXEMPLO FICTÍCIO</span>
                 <p class="text-sm text-slate-600">"O módulo de teste pegou falha que a gente nunca teria percebido sozinho, antes de colocar no ar pro cliente."</p>
-                <p class="mt-4 text-xs font-semibold text-slate-500">Nome, Cargo — Empresa (placeholder)</p>
+                <div class="mt-5 flex items-center gap-3">
+                    <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-sm font-semibold text-emerald-700">RA</span>
+                    <div>
+                        <p class="text-xs font-semibold text-slate-700">Rodrigo Alves</p>
+                        <p class="text-xs text-slate-500">Head de CX — Nexa Soluções (fictício)</p>
+                    </div>
+                </div>
             </div>
             <div class="relative rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6">
-                <span class="absolute -top-2 right-4 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700">EXEMPLO</span>
+                <span class="absolute -top-2 right-4 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700">EXEMPLO FICTÍCIO</span>
                 <p class="text-sm text-slate-600">"Rodamos campanha pra milhares de contatos sem tomar bloqueio. Antes era impossível fazer isso com segurança."</p>
-                <p class="mt-4 text-xs font-semibold text-slate-500">Nome, Cargo — Empresa (placeholder)</p>
+                <div class="mt-5 flex items-center gap-3">
+                    <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sm font-semibold text-sky-700">CD</span>
+                    <div>
+                        <p class="text-xs font-semibold text-slate-700">Camila Duarte</p>
+                        <p class="text-xs text-slate-500">Coordenadora de Marketing — Vantte Serviços (fictício)</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
