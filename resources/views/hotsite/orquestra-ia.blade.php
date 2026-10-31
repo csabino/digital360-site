@@ -1,8 +1,3 @@
-@php
-    // Substitua pelo número real do WhatsApp do Orquestra IA antes de publicar.
-    $waNumber = 'NUMERO_WHATSAPP';
-    $waLink = fn (string $text) => 'https://wa.me/' . $waNumber . '?text=' . rawurlencode($text);
-@endphp
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -25,11 +20,19 @@
         <div class="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
             <span class="flex items-center gap-2 text-xl font-bold tracking-tight text-slate-900">
                 <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-violet-600 text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 5.6L19 9l-5.2 1.4L12 16l-1.8-5.6L5 9l5.2-1.4L12 2z"/><path d="M19 13l.9 2.8L22 17l-2.1.8L19 20l-.9-2.2L16 17l2.1-1.2L19 13z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                        <g stroke="currentColor" stroke-width="1.3" stroke-linecap="round" opacity="0.85">
+                            <line x1="12" y1="12" x2="12" y2="4.5" /><line x1="12" y1="12" x2="18.5" y2="8.3" /><line x1="12" y1="12" x2="18.5" y2="15.7" />
+                            <line x1="12" y1="12" x2="12" y2="19.5" /><line x1="12" y1="12" x2="5.5" y2="15.7" /><line x1="12" y1="12" x2="5.5" y2="8.3" />
+                        </g>
+                        <circle cx="12" cy="4.5" r="1.6" /><circle cx="18.5" cy="8.3" r="1.6" /><circle cx="18.5" cy="15.7" r="1.6" />
+                        <circle cx="12" cy="19.5" r="1.6" /><circle cx="5.5" cy="15.7" r="1.6" /><circle cx="5.5" cy="8.3" r="1.6" />
+                        <circle cx="12" cy="12" r="3" />
+                    </svg>
                 </span>
                 <span>Orquestra<span class="text-violet-600">IA</span></span>
             </span>
-            <a href="{{ $waLink('Quero saber mais sobre o Orquestra IA.') }}" target="_blank" rel="noopener" class="hidden sm:inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600 transition">
+            <a href="{{ whatsapp_url('Quero saber mais sobre o Orquestra IA.') }}" target="_blank" rel="noopener" class="hidden sm:inline-flex rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600 transition">
                 Fale com a gente no WhatsApp
             </a>
         </div>
@@ -52,7 +55,7 @@
                 O Orquestra IA conecta múltiplos assistentes de Inteligência Artificial ao seu WhatsApp pra atender, agendar e vender — enquanto você foca no resto do negócio.
             </p>
             <div class="mt-10 flex flex-col sm:flex-row flex-wrap justify-center gap-4">
-                <a href="{{ $waLink('Quero saber mais sobre o Orquestra IA.') }}" target="_blank" rel="noopener" class="rounded-full bg-emerald-500 px-6 py-3 text-white font-semibold hover:bg-emerald-600 transition">
+                <a href="{{ whatsapp_url('Quero saber mais sobre o Orquestra IA.') }}" target="_blank" rel="noopener" class="rounded-full bg-emerald-500 px-6 py-3 text-white font-semibold hover:bg-emerald-600 transition">
                     Fale com a gente no WhatsApp
                 </a>
                 <a href="#funcionalidades" class="rounded-full border border-slate-600 px-6 py-3 font-medium text-white hover:border-violet-400 transition">
@@ -67,7 +70,15 @@
                 <div class="flex items-center justify-between px-5 py-4 border-b border-white/10">
                     <span class="flex items-center gap-2 text-sm font-bold text-white">
                         <span class="flex h-6 w-6 items-center justify-center rounded-md bg-violet-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 5.6L19 9l-5.2 1.4L12 16l-1.8-5.6L5 9l5.2-1.4L12 2z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                                <g stroke="currentColor" stroke-width="1.3" stroke-linecap="round" opacity="0.85">
+                                    <line x1="12" y1="12" x2="12" y2="4.5" /><line x1="12" y1="12" x2="18.5" y2="8.3" /><line x1="12" y1="12" x2="18.5" y2="15.7" />
+                                    <line x1="12" y1="12" x2="12" y2="19.5" /><line x1="12" y1="12" x2="5.5" y2="15.7" /><line x1="12" y1="12" x2="5.5" y2="8.3" />
+                                </g>
+                                <circle cx="12" cy="4.5" r="1.6" /><circle cx="18.5" cy="8.3" r="1.6" /><circle cx="18.5" cy="15.7" r="1.6" />
+                                <circle cx="12" cy="19.5" r="1.6" /><circle cx="5.5" cy="15.7" r="1.6" /><circle cx="5.5" cy="8.3" r="1.6" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
                         </span>
                         <span>Painel de Assistentes</span>
                     </span>
@@ -320,7 +331,7 @@
             <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Pronto pra colocar seu atendimento no automático — de verdade?</h2>
             <p class="mt-4 text-slate-300 max-w-xl mx-auto">Sem compromisso. Em poucos minutos a gente te mostra funcionando.</p>
             <div class="mt-8">
-                <a href="{{ $waLink('Quero saber mais sobre o Orquestra IA.') }}" target="_blank" rel="noopener" class="inline-flex rounded-full bg-emerald-500 px-8 py-3.5 text-white font-semibold hover:bg-emerald-600 transition">
+                <a href="{{ whatsapp_url('Quero saber mais sobre o Orquestra IA.') }}" target="_blank" rel="noopener" class="inline-flex rounded-full bg-emerald-500 px-8 py-3.5 text-white font-semibold hover:bg-emerald-600 transition">
                     Falar no WhatsApp agora
                 </a>
             </div>
@@ -330,12 +341,12 @@
     <footer class="py-10 text-center">
         <p class="text-sm font-bold text-slate-900">Orquestra<span class="text-violet-600">IA</span></p>
         <p class="mt-2 text-xs text-slate-500 max-w-md mx-auto">Plataforma de atendimento ao cliente via WhatsApp com Inteligência Artificial — múltiplos assistentes, uma única central de controle.</p>
-        <a href="{{ $waLink('Quero saber mais sobre o Orquestra IA.') }}" target="_blank" rel="noopener" class="mt-4 inline-block text-xs font-medium text-emerald-600 hover:text-emerald-700">Falar no WhatsApp</a>
+        <a href="{{ whatsapp_url('Quero saber mais sobre o Orquestra IA.') }}" target="_blank" rel="noopener" class="mt-4 inline-block text-xs font-medium text-emerald-600 hover:text-emerald-700">Falar no WhatsApp</a>
         <p class="mt-6 text-xs text-slate-400">&copy; {{ now()->year }} Orquestra IA. Todos os direitos reservados.</p>
     </footer>
 
     {{-- Floating WhatsApp button --}}
-    <a href="{{ $waLink('Quero saber mais sobre o Orquestra IA.') }}" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-emerald-500 text-white shadow-lg hover:bg-emerald-600 transition">
+    <a href="{{ whatsapp_url('Quero saber mais sobre o Orquestra IA.') }}" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-emerald-500 text-white shadow-lg hover:bg-emerald-600 transition">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="h-7 w-7" fill="currentColor"><path d="M16.001 3C9.374 3 4 8.373 4 15c0 2.37.693 4.58 1.885 6.44L4 29l7.73-1.838A11.93 11.93 0 0016.001 27C22.627 27 28 21.627 28 15S22.627 3 16.001 3zm0 21.75c-1.98 0-3.823-.58-5.375-1.578l-.386-.242-4.59 1.092 1.113-4.472-.252-.398A9.71 9.71 0 016.25 15c0-5.376 4.374-9.75 9.751-9.75 5.376 0 9.75 4.374 9.75 9.75s-4.374 9.75-9.75 9.75zm5.344-7.302c-.293-.147-1.734-.856-2.003-.953-.269-.098-.465-.147-.66.147-.196.293-.758.953-.93 1.148-.171.196-.343.22-.635.073-.293-.147-1.237-.456-2.357-1.455-.871-.777-1.46-1.737-1.631-2.03-.171-.293-.018-.451.129-.597.133-.132.293-.343.44-.514.147-.172.196-.294.293-.49.098-.196.049-.367-.024-.514-.073-.147-.66-1.59-.904-2.178-.238-.571-.48-.494-.66-.503l-.562-.01c-.196 0-.514.073-.783.367-.269.293-1.026 1.003-1.026 2.446s1.051 2.837 1.198 3.033c.147.196 2.07 3.16 5.016 4.432.701.303 1.248.484 1.675.619.704.224 1.344.192 1.85.117.564-.084 1.734-.709 1.978-1.393.245-.685.245-1.271.172-1.393-.073-.123-.269-.196-.562-.343z"/></svg>
     </a>
 </body>
